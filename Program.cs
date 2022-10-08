@@ -10,7 +10,7 @@ namespace Logical_Programming_Problems
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("  Logical  Programming  Problems ");
+            FibonacciSeries.Fseries();
         }
     }
 }
