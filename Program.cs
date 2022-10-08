@@ -10,7 +10,12 @@ namespace Logical_Programming_Problems
     {
         static void Main(string[] args)
         {
-            FibonacciSeries.Fseries();
+            //FibonacciSeries.Fseries();
+
+            PerfectNumber.Check(); 
+
+
+
         }
     }
 }
