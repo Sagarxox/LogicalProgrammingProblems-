@@ -12,8 +12,8 @@ namespace Logical_Programming_Problems
         {
             //FibonacciSeries.Fseries();
 
-            PerfectNumber.Check(); 
-
+            // PerfectNumber.Check(); 
+            PrimeNumber.Number();
 
 
         }
