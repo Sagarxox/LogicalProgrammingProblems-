@@ -9,34 +9,59 @@ namespace Logical_Programming_Problems
     public class PerfectNumber
     {
 
-        
+
         public static void Check()
         {
-            int rem, i, sum =0 ;
-            Console.Write("\n");
-            Console.Write(" program to Print Perfect no:\n");
-            Console.Write("----------------------------------------------\n");
-  
-            Console.WriteLine("enter the Number : ");
-            int num = Convert.ToInt32(Console.ReadLine());
-            for (i = 1; (i <= num / 2); i++)
+
+
+
+
+            int n, i, sum;
+            int mn, mx;
+
+            Console.Write("\n\n");
+            Console.Write("Find perfect numbers within a given number of range:\n");
+            Console.Write("------------------------------------------------------");
+            Console.Write("\n\n");
+
+            Console.Write("Input the starting range or number : ");
+            mn = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Input the ending range of number : ");
+            mx = Convert.ToInt32(Console.ReadLine());
+            Console.Write("The Perfect numbers within the given range : ");
+            for (n = mn; n <= mx; n++)
             {
-                rem = num % i;
-                if (rem == 0)
+                i = 1;
+                sum = 0;
+                while (i < n)
                 {
-                    sum += i;
+                    if (n % i == 0)
+                        sum +=  i;
+                    i++;
                 }
+                if (sum == n)
+                    Console.Write("{0} ", n);
+                
+              
+            }
+            Console.Write("\n");
+            int num ;
+            Console.WriteLine(" enter the perfect number for above result");
+            num = Convert.ToInt32(Console.ReadLine());
+            Console.Write("{0} = 1 " ,num);
+            for (int divisor = 2; divisor < num; divisor++)
+            {
+                if ((num % divisor) == 0)
+                    Console.Write(  " + {0}", divisor);
 
             }
-            if (sum == num)
-            {
-                Console.WriteLine(" \t {0} is a perfect number",num);
-            }
-            else
-            {
-                Console.WriteLine(" \t {0} is not a perfect number ",num);
-            }
+            Console.WriteLine("  \n");
+
         }
+
+
+
     }
+    
 
 }
