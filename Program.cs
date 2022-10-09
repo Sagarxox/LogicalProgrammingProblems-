@@ -13,8 +13,8 @@ namespace Logical_Programming_Problems
             //FibonacciSeries.Fseries();
 
             // PerfectNumber.Check(); 
-            PrimeNumber.Number();
-
+            //PrimeNumber.Number();
+            ReverseNumber.Check();
 
         }
     }
