@@ -15,8 +15,8 @@ namespace Logical_Programming_Problems
             // PerfectNumber.Check(); 
             //PrimeNumber.Number();
             //ReverseNumber.Check();
-          //  CouponNumber.Generate();
-            StopWatch.Start();
+           CouponNumber.Generate();
+          //  StopWatch.Start();
         }
     }
 }
